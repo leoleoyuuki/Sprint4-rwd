@@ -24,19 +24,19 @@ export default function FormCliente() {
     console.log(formData)
     // Faça algo com os dados, por exemplo, envie para um servidor
     try{
-      //Api do Java executado em localhost:8080 
-    const resposta = await fetch("http://localhost:8080/sprint4/cliente",{
+    const resposta = await fetch("http://localhost:8080/sprint4/bicicleta",{
         method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
         body: JSON.stringify(formData),
     });
     const resultado = await resposta.json();
         console.log(resultado)
         console.log(resposta.status)
-        window.location.href = "/";
-
+        
     }catch(error){
         console.log("erro ao enviar dados para o backend",error)
-        window.location.href = "/";
     }
   };
 
