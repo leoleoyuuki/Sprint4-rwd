@@ -50,7 +50,7 @@
 
   /* COMECO SECAO 2  */
   .secao2 {
-    @apply overflow-x-scroll flex flex-col justify-around h-[65vh] w-4/5 mx-auto;
+    @apply overflow-x-scroll overflow-y-hidden flex flex-col justify-around h-[65vh] w-4/5 mx-auto;
   }
 
   .secao2 .texts {
