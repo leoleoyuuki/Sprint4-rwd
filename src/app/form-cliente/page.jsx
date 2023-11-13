@@ -31,7 +31,6 @@ export default function FormCliente() {
         body: JSON.stringify(formData),
     });
     const resultado = await resposta.json();
-        console.log(resultado)
         console.log(resposta.status)
         
     }catch(error){
