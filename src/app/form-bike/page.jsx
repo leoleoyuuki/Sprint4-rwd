@@ -8,6 +8,7 @@ import {BsArrowRightShort} from 'react-icons/bs'
 export default function FormCliente() {
   const [formData, setFormData] = useState({
     peso: "",
+    preco: "",
     marca: "",
     tipo: "",
     material: "",
@@ -34,6 +35,7 @@ export default function FormCliente() {
     const resultado = await resposta.json();
         console.log(resultado)
         console.log(resposta.status)
+        window.location.href = "/"
         
     }catch(error){
         console.log("erro ao enviar dados para o backend",error)
@@ -61,7 +63,6 @@ export default function FormCliente() {
             </div>
             <form onSubmit={handleSubmit} className="flex flex-col gap-y-5 items-center form">
                 <div>
-                    {/* <label htmlFor="idPeso" className="w-20 inline-block">Peso</label> */}
                     <input
                     type="text"
                     name="peso"
@@ -72,7 +73,16 @@ export default function FormCliente() {
                     onChange={handleChange}/>
                 </div>
                 <div>
-                    {/* <label htmlFor="idMarca" className="w-20 inline-block">Marca</label> */}
+                    <input
+                    type="text"
+                    name="preco"
+                    required
+                    placeholder="Preco da bicicleta"
+                    id="idPreco"
+                    value={formData.preco}
+                    onChange={handleChange}/>
+                </div>
+                <div>
                     <input
                     type="text"
                     name="marca"
@@ -83,23 +93,21 @@ export default function FormCliente() {
                     onChange={handleChange}/>
                 </div>
                 <div>
-                    {/* <label htmlFor="idTipo" className="w-20 inline-block">Tipo</label> */}
                     <input
                     type="text"
                     name="tipo"
                     required
-                    placeholder="Telefone do cliente"
+                    placeholder="Tipo da Bicicleta"
                     id="idTipo"
                     value={formData.telefone}
                     onChange={handleChange}/>
                 </div>
                 <div>
-                    {/* <label htmlFor="idMaterial" className="w-20 inline-block">Material</label> */}
                     <input
                     type="text"
                     name="material"
                     required
-                    placeholder="Idade do cliente"
+                    placeholder="Material da bicicleta"
                     id="idMaterial"
                     value={formData.idade}
                     onChange={handleChange}/>

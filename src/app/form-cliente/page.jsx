@@ -36,6 +36,7 @@ export default function FormCliente() {
     const resultado = await resposta.json();
         console.log(resultado)
         console.log(resposta.status)
+        window.location.href="/form-bike"
         
     }catch(error){
         console.log("erro ao enviar dados para o backend",error)
@@ -63,7 +64,6 @@ export default function FormCliente() {
             </div>
             <form onSubmit={handleSubmit} className="flex flex-col gap-y-5 items-center form">
                 <div>
-                    {/* <label htmlFor="idCliente" className="w-20 inline-block">Cliente</label> */}
                     <input
                     type="text"
                     name="nome"
@@ -74,7 +74,6 @@ export default function FormCliente() {
                     onChange={handleChange}/>
                 </div>
                 <div>
-                    {/* <label htmlFor="idCPF" className="w-20 inline-block">CPF</label> */}
                     <input
                     type="text"
                     name="cpf"
@@ -85,7 +84,6 @@ export default function FormCliente() {
                     onChange={handleChange}/>
                 </div>
                 <div>
-                    {/* <label htmlFor="idTelefone" className="w-20 inline-block">Telefone</label> */}
                     <input
                     type="tel"
                     name="telefone"
@@ -96,7 +94,6 @@ export default function FormCliente() {
                     onChange={handleChange}/>
                 </div>
                 <div>
-                    {/* <label htmlFor="idIdade" className="w-20 inline-block">Idade</label> */}
                     <input
                     type="number"
                     name="idade"
@@ -108,7 +105,6 @@ export default function FormCliente() {
                 </div>
             
                 <div>
-                    {/* <label htmlFor="idEndereco" className="w-20 inline-block">Endereço</label> */}
                     <input
                     type="text"
                     name="endereco"
@@ -119,7 +115,6 @@ export default function FormCliente() {
                     onChange={handleChange}/>
                 </div>
                 <div>
-                    {/* <label htmlFor="idEmail" className="w-20 inline-block">Email</label> */}
                     <input
                     type="email"
                     name="email"
