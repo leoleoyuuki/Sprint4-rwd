@@ -46,7 +46,7 @@ export default function Header() {
           
         </ul>
         <div className='invisible'>
-          <Image src={""} width={200} />
+          <Image src={""} width={200} height={100} alt='invisible' />
         </div>
       </div>
       <div className={`menu-overlay ${menuAberto ? 'visible' : ''}`} onClick={toggleMenu}></div>
