@@ -9,7 +9,7 @@ export default function Footer() {
       <footer>
         <div className="footer">
           <div className="logo">
-            <Image src="/img/logo.png" width={200} height={80}/>
+            <Image src="/img/logo.png" width={200} height={80} alt='Logo'/>
           </div>
           <hr />
           <p>&copy; 2023 - Todos os direitos reservados</p>

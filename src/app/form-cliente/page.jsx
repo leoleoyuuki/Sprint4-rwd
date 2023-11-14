@@ -47,7 +47,7 @@ export default function FormCliente() {
     <div className="container-form">
       <div className="left">
         <div className="left-container">
-          <Image src="/img/logo.png" width={150} height={100} alt="Imagem" />
+          <Image src="/img/logo.png" width={150} height={100} alt="logo" />
           <div className="w-2/3">
               <h1 className="text-xl font-bold">Seja bem-vindo</h1>
               <p>Crie o seu cadastro para fazer a cotação gratuita do seu seguro bike.</p>
