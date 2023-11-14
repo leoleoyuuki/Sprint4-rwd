@@ -21,7 +21,7 @@ export default function Header() {
       <div className="head">
         <div className="logo">
           <Link href="/">
-            <Image src="img/logo.png" width={200}/>
+            <Image src="/img/logo.png" width={200} height={100}/>
           </Link>
         </div>
         <nav className={`menuMobile ${menuAberto ? 'accent' : ''}`}>
