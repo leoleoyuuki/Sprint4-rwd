@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { HiMenu } from 'react-icons/hi'
 import {VscError} from 'react-icons/vsc'
-import logo from '../../../public/img/logo.png';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
@@ -22,7 +21,7 @@ export default function Header() {
       <div className="head">
         <div className="logo">
           <Link href="/">
-            <Image src={logo} width={200}/>
+            <Image src="img/logo.png" width={200}/>
           </Link>
         </div>
         <nav className={`menuMobile ${menuAberto ? 'accent' : ''}`}>
