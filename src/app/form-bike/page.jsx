@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import logo from '../../../public/img/logo.png';
 import {BsArrowRightShort} from 'react-icons/bs'
 
 
@@ -46,7 +45,7 @@ export default function FormCliente() {
     <div className="container-form">
       <div className="left">
         <div className="left-container">
-          <Image src={logo} width={150} height={100} alt="Imagem" />
+          <Image src="../../../public/img/logo.png" width={150} height={100} alt="Imagem" />
           <div className="w-2/3">
               <h1 className="text-xl font-bold">Seja bem-vindo</h1>
               <p>Crie o seu cadastro para fazer a cotação gratuita do seu seguro bike.</p>
