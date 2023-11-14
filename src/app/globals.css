@@ -145,11 +145,11 @@
 }
 
 
+/* ALUNOS */
+.container-alunos{
+  @apply flex flex-col h-[60vh] text-black text-center justify-center;
 
-
-
-
-
+}
 /* MEDIA QUERIES */
 @media (max-width: 1199px) {
   .secao1 .titulo {
