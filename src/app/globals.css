@@ -5,7 +5,7 @@
 
   /* COMECO SECAO 1  */
   .secao1 {
-    background: url(../../public/img/banner.svg);
+    background: url(/img/banner.svg);
     @apply bg-cover bg-no-repeat bg-right min-h-screen flex items-center;
   }
 
