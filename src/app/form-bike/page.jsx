@@ -37,7 +37,7 @@ export default function FormCliente() {
         window.location.href = "/"
         
     }catch(error){
-        console.log("erro ao enviar dados para o backend",error)
+        console.log("erro ao enviar dados para o backend", error)
     }
   };
 
